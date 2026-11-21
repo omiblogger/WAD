@@ -1,0 +1,8 @@
+*.pyc
+__pycache__
+.venv
+.git
+.env
+.pytest_cache
+README.md
+DAY_BY_DAY.md
