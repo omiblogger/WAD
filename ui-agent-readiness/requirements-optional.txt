@@ -1,0 +1,5 @@
+# Install only on their scheduled days:
+agent-framework-openai
+azure-search-documents
+azure-core
+langgraph

@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 from app.logic import calculate_emi
 from app.retrieval import retrieve
 from app.llm import answer_with_azure
+from fastapi.testclient import TestClient
 
 load_dotenv()
 app = FastAPI(title="Banking AI Assistant - EY Readiness Lab", version="0.1.2")
@@ -19,6 +20,17 @@ class EMIRequest(BaseModel):
     principal: float = Field(gt=0)
     annual_rate: float = Field(ge=0)
     years: int = Field(gt=0, le=50)
+
+Client = TestClient(app)
+
+def test_health_endpoint():
+    response = Client.get("/health")
+    assert response.status_code ==200
+    assert response.json() =={
+        "status": "ok",
+        "service": "banking-ai-assistant",
+        "version": app.version
+    }
 
 
 @app.get("/health")

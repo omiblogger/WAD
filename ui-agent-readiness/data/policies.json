@@ -1,0 +1,22 @@
+[
+  {
+    "id": "POL-001",
+    "title": "Home loan required documents",
+    "content": "For a demo home-loan application, applicants provide identity proof, address proof, proof of income, six months of bank statements, and property-related documents. Rules vary by lender; this is synthetic training content."
+  },
+  {
+    "id": "POL-002",
+    "title": "KYC onboarding verification",
+    "content": "This demo KYC workflow verifies identity proof, address proof, document validity, and customer identity. Escalate mismatches for human review. These are synthetic training instructions."
+  },
+  {
+    "id": "POL-003",
+    "title": "Personal loan repayment and EMI",
+    "content": "Loan EMI depends on principal, annual interest rate, and repayment period. For a fixed-rate amortizing loan, use the standard EMI formula. No loan approval decision is made by this demo."
+  },
+  {
+    "id": "POL-004",
+    "title": "Credit card application and approval",
+    "content": "For a demo credit card application, applicants provide identity proof, address proof, and income verification."
+  }
+]

@@ -17,7 +17,7 @@ def load_policies() -> list[dict]:
     return json.loads(DATA_PATH.read_text(encoding="utf-8"))
 
 
-def retrieve(question: str, limit: int = 3) -> list[dict]:
+def retrieve(question: str, limit: int = 2) -> list[dict]:
     """A tiny transparent retrieval baseline, no database or API key needed."""
     query_words = words(question)
     ranked = []
